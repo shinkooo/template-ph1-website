@@ -131,6 +131,10 @@ color: #666666;
     border-radius: 8px;
     gap: 170px;
 }
+.changed1 {
+    border-color: #0071BC;
+
+}
 
 .q1_ans_choice img {
     cursor: pointer;
