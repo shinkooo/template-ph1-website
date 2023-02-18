@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ITクイズ | POSSE 初めての制作</title>
+    <!--スタイルシート読み込み-->
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <!--フォント読み込み-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Plus+Jakarta+Sans&display=swap"rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Plus+Jakarta+Sans&display=swap"rel="stylesheet"
     />
+    <script src="../quiz.page/answer.js"></script>
+    <script src="../quiz.page/style.js"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="js-header">
         <div class="header_logo">
         <img src="../assets/img/logo.svg" alt="POSSEとは" />
+        <button class="p-header_botton" id="js-headerButton"></button>
         </div>
         <ul class="header_nav">
         <li class="header_nav_item">POSSEとは</li>
@@ -26,13 +30,17 @@
         </ul>
     </header>
 
-    <hero class="hero">
-        <div class="hero_img">
-            <img src="../assets/img/quiz/bg-hero.jpg" alt="aa">
-        </div>
-    </hero>
+
 
     <main class="main">
+
+        <section class="p-hero p-quiz-hero">
+            <div class="hero-titlle">
+
+              <p class="hero-p-1">POSSE課題</p>
+              <p class="hero-p-2">ITクイズ</p>
+            </div>
+        </section>
 
       
       <div class="main_q">
@@ -265,6 +273,5 @@
         </div>
       </footer>
 
-      <script src="answer.js"></script>
 </body>
 </html>

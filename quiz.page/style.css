@@ -30,14 +30,9 @@ color: #666666;
 
 }
 
-/* 全てのページにて適用 - ヒーロー */
 
 
-.hero_img img {
 
-    width: 1440px;
-    height: 320px;
-}
 
 /* 全てのページにて適用 - メイン */
 
@@ -46,6 +41,44 @@ color: #666666;
     width: 1440px;
     height: 7500px;
 }
+
+.p-quiz-hero {
+    position: relative;
+
+    background: url(../assets/img/quiz/bg-hero.jpg);
+}
+
+.hero-titlle {
+    width: 1440px;
+    height: 160px;
+}
+
+.hero-p-1 {
+    position: absolute;
+    position: absolute;
+    width: 96px;
+    height: 32px;
+    left: 160px;
+    color: #EEEEEE;    
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 180%;
+}
+
+.hero-p-2 {
+    color: #EEEEEE;
+    position: absolute;
+    left: 160px;
+    bottom: 100px;
+    font-weight: 700;
+    font-size: 60px;
+
+}
+
+.p-hero {
+    padding: 80px 80px 80px;
+}
+
 
 .main_q {
     position: relative;
@@ -65,7 +98,7 @@ color: #666666;
     border-radius: 8%;
 }
 
-.question {
+.question_text {
 
     color: #EEEEEE;
     margin-top: 10px;
