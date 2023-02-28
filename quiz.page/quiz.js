@@ -22,7 +22,7 @@ const QUESTIONS=[
   },
   {
     index: 3,
-    title: "イギリスのコンピューター科学者であるギャビン・ウッド氏が提唱した、ブロックチェーン技術を活用した「次世代分散型インターネット」のことをなんと言うでしょう？",
+    title: "日本が目指すサイバー空間とフィジカル空間を高度に融合させたシステムによって開かれる未来社会のことをなんと言うでしょうか？",
     choices: ["Society 5.0", "CyPhy", "X-SDGs"],
     note: "Society5.0 - 科学技術政策 - 内閣府",
   },
@@ -68,12 +68,22 @@ const CORRECT_ANSWERS = [
   }
 ];
 
+const shuffle = ([...array]) => {
+  for (let i = array.length - 1; i >= 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+const shuffledQuestions=shuffle(QUESTIONS);
+
 function addQuestions(){
   const main= document.getElementById("js-quiz-in");
 
   let content = "";
 
-  QUESTIONS.forEach(question => {
+  shuffledQuestions.forEach((question, questionNumber) => {
 
 
     let choices = "";
@@ -95,7 +105,7 @@ function addQuestions(){
       <section class="p-quiz-box js-quiz" data-quiz="${question.index}">
       <div class="p-quiz-box__question">
         <h2 class="p-quiz-box__question__title">
-          <span class="p-quiz-box__label">Q${question.index+1}</span>
+          <span class="p-quiz-box__label">Q${questionNumber+1}</span>
           <span class="p-quiz-box__question__title__text">${question.title}</span>
         </h2>
         <figure class="p-quiz-box__questioｃn__image">
